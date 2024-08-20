@@ -7,17 +7,18 @@ This Python script is designed to scrape articles from a sitemap, extract key co
 The script fetches up to 10,000 article URLs from a sitemap, scrapes relevant content and metadata from each URL, and saves the data in JSON files in batches. This approach allows for efficient storage and easy management of large datasets.
 
 # Key Features
-# Sitemap Parsing: Extracts article URLs directly from the sitemap.
-# Comprehensive Scraping: Captures essential metadata, including title, author, publication date, keywords, and the full text of the article.
-# Batch Processing: Saves the scraped articles into JSON files, with a maximum of 2,000 articles per file.
-# UTF-8 Support: Ensures that the output files handle special characters correctly.
+Sitemap Parsing: Extracts article URLs directly from the sitemap.
+Comprehensive Scraping: Captures essential metadata, including title, author, publication date, keywords, and the full text of the article.
+Batch Processing: Saves the scraped articles into JSON files, with a maximum of 2,000 articles per file.
+UTF-8 Support: Ensures that the output files handle special characters correctly.
+
 # Prerequisites
 Python 3.x
-# requests library
-# beautifulsoup4 library
+requests library
+beautifulsoup4 library
 
 # How to Use
-# Configure the Script:
+Configure the Script:
 
 Open the script and modify the following variables if needed:
 
@@ -34,19 +35,19 @@ The script will generate JSON files (e.g., articles_1.json, articles_2.json, etc
 
 # Output
 Each JSON file contains a list of articles, with each article's data stored as a dictionary including:
-# url: The original URL of the article.
-# post_id: A unique identifier for the article (if available).
-# title: The title of the article.
-# keywords: Keywords associated with the article.
-# thumbnail: URL to the article's thumbnail image.
-# publication_date: The article's publication date.
-# last_updated_date: The date the article was last updated.
-# author: The author of the article.
-# full_text: The full text of the article.
-# word_count: The total word count of the article.
-# language: The language of the article (default is English).
-# description: A brief description of the article.
-# class: The classification of the article (e.g., "news").
+url: The original URL of the article.
+post_id: A unique identifier for the article (if available).
+title: The title of the article.
+keywords: Keywords associated with the article.
+thumbnail: URL to the article's thumbnail image.
+publication_date: The article's publication date.
+last_updated_date: The date the article was last updated.
+author: The author of the article.
+full_text: The full text of the article.
+word_count: The total word count of the article.
+language: The language of the article (default is English).
+description: A brief description of the article.
+class: The classification of the article (e.g., "news").
 
 # Example Output
 json
